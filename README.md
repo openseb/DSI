@@ -14,7 +14,7 @@ This is not meant for BetterDiscord, this is a standalone code for vanilla Disco
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/ZenfadeCOM/DSI
+git clone https://github.com/openseb/dsi
 cd DSI
 ```
 2. Install dependencies:

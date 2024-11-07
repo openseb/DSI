@@ -1,0 +1,130 @@
+/* Core Theme Variables */
+:root {
+    --app-opacity: 0.85;
+    --blur-small: 4px;
+    --blur-medium: 8px;
+    --blur-large: 10px;
+    --background-alpha: 0.4;
+    --border-alpha: 0.1;
+}
+
+/* Base Theme Colors - Dark */
+.theme-dark {
+    /* Main backgrounds with transparency */
+    --background-primary: rgba(0, 0, 0, 0.7);
+    --background-secondary: rgba(0, 0, 0, 0.6);
+    --background-secondary-alt: rgba(0, 0, 0, 0.5);
+    --background-tertiary: rgba(0, 0, 0, 0.8);
+    --background-floating: rgba(0, 0, 0, 0.8);
+    --background-accent: rgba(0, 0, 0, 0.9);
+
+    /* Text colors */
+    --text-normal: rgba(255, 255, 255, 0.95);
+    --text-muted: rgba(255, 255, 255, 0.4);
+    --text-link: rgba(255, 255, 255, 0.7);
+    --header-primary: rgb(255, 255, 255);
+    --header-secondary: rgba(255, 255, 255, 0.6);
+    
+    /* Interactive elements */
+    --interactive-normal: rgba(255, 255, 255, 0.7);
+    --interactive-hover: rgba(255, 255, 255, 0.9);
+    --interactive-active: rgb(255, 255, 255);
+    --interactive-muted: rgba(255, 255, 255, 0.3);
+}
+
+/* Main App Container */
+.appMount_ea7e65 {
+    background: rgba(0, 0, 0, var(--app-opacity)) !important;
+    backdrop-filter: blur(var(--blur-large)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-large)) !important;
+}
+
+/* Popup/Menu Base Styles */
+.menu-1QACrS,
+.contextMenu-uoJTbz,
+.subMenuContext-uoJTbz {
+    background-color: rgba(0, 0, 0, var(--background-alpha)) !important;
+    backdrop-filter: blur(var(--blur-small)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-small)) !important;
+    border: 1px solid rgba(255, 255, 255, var(--border-alpha)) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24) !important;
+}
+
+/* Submenu Fixes */
+.submenu {
+    position: relative !important;
+    transform: none !important;
+    animation: submenu-fade 0.1s ease-out !important;
+}
+
+.submenuContainer-3EVTeH {
+    position: absolute !important;
+    left: 100% !important;
+    top: 0 !important;
+    margin-left: 2px !important;
+    transform-origin: left !important;
+    animation: submenu-slide 0.15s ease-out !important;
+}
+
+@keyframes submenu-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Menu Items */
+.item_d90b3d {
+    background: transparent !important;
+}
+
+.item_d90b3d:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Danger Elements */
+.colorDanger_d90b3d,
+.item_d90b3d.colorDanger_d90b3d {
+    color: rgb(255, 70, 70) !important;
+}
+
+.item_d90b3d.colorDanger_d90b3d:hover {
+    background: rgba(255, 70, 70, 0.1) !important;
+}
+
+/* Modal and Overlay Styles */
+.layer-86YKbF,
+.modal-3Hrb0S,
+.root-1CAIjD,
+.container-2O1UgZ {
+    backdrop-filter: blur(var(--blur-medium)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-medium)) !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.backdrop-2ByYRN {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(var(--blur-medium)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-medium)) !important;
+}
+
+/* User Popouts and Tooltips */
+.userPopout-2j1gM4,
+.profilePopout-DXgfwH,
+.tooltip-33Jwqe {
+    backdrop-filter: blur(var(--blur-medium)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-medium)) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Search and Autocomplete */
+.searchResultsWrap-5RVOkx,
+.autocomplete-3NRXG8 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(var(--blur-small)) !important;
+    -webkit-backdrop-filter: blur(var(--blur-small)) !important;
+}

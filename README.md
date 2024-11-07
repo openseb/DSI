@@ -1,0 +1,2 @@
+# DSI
+Discord Stylesheet Injector
